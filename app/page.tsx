@@ -1,20 +1,30 @@
-import { Carousel } from "components/carousel";
-import { ThreeItemGrid } from "components/grid/three-items";
+import HeroBanner from "components/home/hero-banner";
+import AboutPreview from "components/home/about-preview";
+import PartnersSection from "components/home/partners-section";
+import OfficesSection from "components/home/offices-section";
+import ClientsSection from "components/home/clients-section";
+import FAQSection from "components/home/faq-section";
+import NewsSection from "components/home/news-section";
+import FeedbackForm from "components/home/feedback-form";
 import Footer from "components/layout/footer";
 
 export const metadata = {
+  title: "Главная страница",
   description:
-    "High-performance ecommerce store built with Next.js, Vercel, and Shopify.",
-  openGraph: {
-    type: "website",
-  },
+    "SPL (System Professional Line) — один из ведущих отечественных производителей электротехнических и слаботочных решений на российском рынке.",
 };
 
 export default function HomePage() {
   return (
     <>
-      <ThreeItemGrid />
-      <Carousel />
+      <HeroBanner />
+      <AboutPreview />
+      <PartnersSection />
+      <OfficesSection />
+      <ClientsSection />
+      <FAQSection />
+      <NewsSection />
+      <FeedbackForm />
       <Footer />
     </>
   );
